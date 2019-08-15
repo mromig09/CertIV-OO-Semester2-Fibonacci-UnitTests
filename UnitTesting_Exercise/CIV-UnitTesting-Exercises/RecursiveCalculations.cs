@@ -11,7 +11,7 @@
         public int FibonacciRec(int num1, int num2, int numFibs) {
             if (numFibs > 0) {
                 numFibs--;
-                num2 = num1 + num2;
+                //num2 = num1 + num2;
                 return FibonacciRec(num2, num2 + num1, numFibs);
             }        
             return num2 + num1;

@@ -36,5 +36,20 @@ namespace ClassLibrary1
             //Assert
             Assert.AreEqual(expected, Result);
         }
+
+        [Test]
+        [TestCase(0, 1, 0, 1)]
+        [TestCase(0, 1, 1, 2)]
+        [TestCase(0, 1, 2, 3)]
+        [TestCase(0, 1, 3, 5)]
+        [TestCase(0, 1, 4, 8)]
+        public void FactorialRec(int input, int ans, int expected)
+        {
+            //Act
+            var Result = Tests.FactorialRec(input, ans, expected);
+
+            //Assert
+            Assert.AreEqual(expected, Result);
+        }
     }
 }
